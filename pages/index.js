@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import AlbumItem from '../components/AlbumItem';
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
             from-gray-500 
             to-slate-900 animate-gradient-x"
       >
-        <h1 class="text-white text-3xl font-semibold"></h1>
+       <AlbumItem /> 
       </div>
+      
     </div>
   );
 }
