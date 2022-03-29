@@ -1,23 +1,25 @@
 import Head from 'next/head';
-import AlbumItem from '../components/AlbumItem';
+import { Component } from 'react';
+import Terminal from '../components/Terminal';
+import Header from '../components/Header'
 
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Spotify Playground</title>
-      </Head>
-      <div
-        class="flex 
-              items-center
-              justify-center 
-              h-screen bg-gradient-to-r 
-            from-gray-500 
-            to-slate-900 animate-gradient-x"
-      >
-       <AlbumItem /> 
-      </div>
-      
-    </div>
-  );
+export default class Home extends Component {
+  render() {
+    return (
+      <>
+        <div>
+          <Head>
+            <title>Terminal Site</title>
+          </Head>
+        </div>
+        <Header />
+        <body className="bg-yellow-100">
+          
+          <div className="flex justify-center pt-12 h-96">
+            <Terminal />
+          </div>
+        </body>
+      </>
+    );
+  }
 }
