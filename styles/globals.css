@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+div.terminal-output { 
+    --color: MidnightBlue;
+}
+.terminal {
+    --background: MintCream;
+}
+
+.terminal-error {
+    --error-color: PaleVioletRed;
+}
+
+.terminal, span {
+    --size: 1.2;
+}
+
+.cmd span {
+    --color: MidnightBlue;
+}
+
+.cmd .cmd-prompt span {
+    --background-color: black;
+}
+

@@ -9,13 +9,13 @@ export default class Home extends Component {
       <>
         <div>
           <Head>
-            <title>Terminal Site</title>
+            <title>Tariq's Terminal</title>
           </Head>
         </div>
-        <Header />
-        <body className="bg-yellow-100">
+        <Header headerText='T-TERM'/>
+        <body className="bg-slate-200">
           
-          <div className="flex justify-center pt-12 h-96">
+          <div className="flex justify-center pt-1 h-96">
             <Terminal />
           </div>
         </body>
