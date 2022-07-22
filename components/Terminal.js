@@ -10,9 +10,16 @@ export default class Terminal extends Component {
     $('span').terminal(
       {
         help: function () {
+          this.echo('');
           this.echo(
-            'Hello there! Here are a list of all [[b;blue;white]commands], [[bu;<COLOR>;<BACKGROUND>]options], and descriptions!'
+            'Hello there! Here are a list of all [[bi;purple;white]commands], [[bu;<COLOR>;<BACKGROUND>]options], and descriptions'
           );
+          this.echo('');
+          this.echo('[[bi;purple;white]help]: Displays a list of valid functions accessible within the terminal');
+          this.echo('[[bi;purple;white]hello]: Takes a parameter [[bu;<COLOR>;<BACKGROUND>]name] which greets the user with their corresponding input.');
+          this.echo('[[bi;purple;white]tariq]: Who am I?');
+          this.echo('[[bi;purple;white]contactme]: Provides methods to contact me');
+          this.echo('');
         },
         tariq: function () {
           this.echo('');
