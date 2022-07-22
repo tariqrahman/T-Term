@@ -24,7 +24,7 @@ export default class Terminal extends Component {
         tariq: function () {
           this.echo('');
           this.echo(
-            `What's up! My name is Tariq Rahman and I'm a Computer Science & Engineering major entering my junior year at UCLA. \n`
+            `What's up! My name is Tariq Rahman and I'm a Computer Science & Engineering major entering my junior year at UCLA. \n\nI'm currently interning as a software developer at both rainsphere.ai and The Daily Bruin through Summer 2022. \n\nEventually, this site will act as a showcase for various projects in my\nportfolio. As such projects continue to develop, it runs as a brief introduction to my creativity and development skills!\n`
           );
         },
         hello: function (name) {
@@ -34,12 +34,13 @@ export default class Terminal extends Component {
         contactme: function () {
           this.echo('');
           this.echo(`Reach me via email: tariqrahman@g.ucla.edu`);
+          this.echo('');
         },
       },
 
       {
         greetings:
-          'Welcome to my terminal! Type [[bi;purple;<BACKGROUND>]help] for a list of valid commands!',
+          'Welcome to my terminal! Type [[bi;purple;<BACKGROUND>]help] for a list of valid commands! \n',
         prompt: '>>> ',
       }
     );
