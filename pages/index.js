@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from 'next/Head';
 import { Component } from 'react';
 import Terminal from '../components/Terminal';
 import Header from '../components/Header'
